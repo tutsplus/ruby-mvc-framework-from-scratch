@@ -1,0 +1,6 @@
+<form action="/posts/update">
+  <input type="hidden" name="id" value="<%= post.id %>"/>
+  <input type="text" name="post[title]" value="<%= post.title %>"/>
+  <textarea rows="10" cols="30" name="post[body]" id=""><%= post.body %></textarea>
+  <button type="submit">Update</button>
+</form>
